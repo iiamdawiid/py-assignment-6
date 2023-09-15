@@ -22,6 +22,7 @@ print("===================\nFull Name / Twitter\n===================")
 with open("names.txt") as file:
     data = file.readlines()
     
+# struggled a lot with this part - i did not come up with this pattern
 pattern = re.compile("([A-Z][a-z]+), ([\w -]*)([A-Z][a-z]+).*\s(@[a-zA-Z0-9]+$)")
 
 for info in data:
